@@ -1,0 +1,26 @@
+root = "."
+tmp_dir = ".tmp"
+
+[build]
+bin = ".tmp/bifrost"
+cmd = "go build -o .tmp/bifrost main.go"
+full_bin = ".tmp/bifrost"
+
+include_ext = ["go", "yaml", "yml", "html", "css", "vue", "ts", "js"]
+exclude_dir = ["web"]
+
+log = "air_errors.log"
+
+# delay = 1000
+# kill_delay = 2000
+
+# include_dir = []
+# exclude_file = []
+
+# send_interrupt = false
+
+[log]
+time = true
+
+[misc]
+clean_on_exit = true
